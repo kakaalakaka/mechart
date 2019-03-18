@@ -33,8 +33,8 @@
 #include "..\\Calendar\\CYearDiv.h"
 #include "..\\Calendar\\CCalendar.h"
 #include "..\\Chart\\CBaseShape.h"
-#include "..\\Chart\\CDivMe.h"
-#include "..\\Chart\\Chart.h"
+#include "..\\Chart\\CDiv.h"
+#include "..\\Chart\\CChart.h"
 #include "..\\Chart\\CList.h"
 #include "..\\Chart\\CPlot.h"
 #include "..\\Chart\\CCrossLine.h"
@@ -59,7 +59,7 @@
 #include "..\\Grid\\CBandedGrid.h"
 #include "..\\Grid\\CBandedGridColumn.h"
 #include "..\\Grid\\CGridBand.h"
-#include "..\\Layout\\CDivMe.h"
+#include "..\\Layout\\Div.h"
 #include "..\\Layout\\CGroupBox.h"
 #include "..\\Layout\\CLayoutDiv.h"
 #include "..\\Layout\\CSplitLayoutDiv.h"
@@ -81,5 +81,6 @@
 #include "..\\Label\\CLinkLabel.h"
 #include "..\\Window\\CWindow.h"
 #include "..\\Window\\CWindowFrame.h"
+#include "..\\ToolTip\\ToolTip.h"
 
 using namespace MeLib;

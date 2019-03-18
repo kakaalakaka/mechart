@@ -564,6 +564,14 @@
 				<Filter
 					Name="GannSquare"
 					>
+					<File
+						RelativePath=".\Chart\GannSquare\CGannSquare.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Chart\GannSquare\CSquareCell.cpp"
+						>
+					</File>
 				</Filter>
 			</Filter>
 		</Filter>
@@ -787,6 +795,22 @@
 					RelativePath=".\include\Chart\CVScale.h"
 					>
 				</File>
+				<Filter
+					Name="GannSquare"
+					>
+					<File
+						RelativePath=".\Chart\GannSquare\CGannSquare.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Chart\GannSquare\CGSEnums.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Chart\GannSquare\CSquareCell.h"
+						>
+					</File>
+				</Filter>
 			</Filter>
 			<Filter
 				Name="Grid"

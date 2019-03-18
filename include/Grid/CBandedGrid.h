@@ -17,14 +17,14 @@ namespace MeLib
 	class  CBandedGridColumnMe;
 	class  CGridBandMe;
 
-	class  CBandedGridAMe : public CGridMe
+	class  CBandedGridMe : public CGridMe
 	{
 	protected:
 		int GetAllVisibleBandsWidth();
 	public:
 		vector<CGridBandMe*> m_bands;
-		CBandedGridAMe();
-		virtual ~CBandedGridAMe();
+		CBandedGridMe();
+		virtual ~CBandedGridMe();
 	public:
 		void AddBand(CGridBandMe *band);
 		virtual void AddColumn(CGridColumnMe *column);

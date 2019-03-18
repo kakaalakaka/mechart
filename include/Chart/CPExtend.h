@@ -6,8 +6,8 @@
 #ifndef __CPEXTENDME_H__
 #define __CPEXTENDME_H__
 #pragma once
-#include "..\\stdafx.h"
-#include "..\\include\\Chart\\CPlot.h"
+#include "..\\..\\stdafx.h"
+#include "CPlot.h"
 #include "CPlotBase.h"
 
 namespace MeLib

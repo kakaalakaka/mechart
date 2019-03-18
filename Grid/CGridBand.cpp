@@ -34,12 +34,12 @@ namespace MeLib
 		m_allowResize = allowResize;
 	}
 	
-	CBandedGridAMe* CGridBandMe::GetGrid()
+	CBandedGridMe* CGridBandMe::GetGrid()
 	{
 		return m_grid;
 	}
 	
-	void CGridBandMe::SetGrid(CBandedGridAMe *grid)
+	void CGridBandMe::SetGrid(CBandedGridMe *grid)
 	{
 		m_grid = grid;
 	}

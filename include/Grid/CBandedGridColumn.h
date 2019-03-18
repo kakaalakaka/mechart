@@ -15,7 +15,7 @@
 
 namespace MeLib
 {
-	class  CBandedGridAMe;
+	class  CBandedGridMe;
 	class  CGridColumnMe;
 	class  CGridBandMe;
 

@@ -15,14 +15,14 @@
 
 namespace MeLib
 {
-	class  CBandedGridAMe;
+	class  CBandedGridMe;
 	class  CBandedGridColumnMe;
 
 	class  CGridBandMe : public CButtonMe
 	{
 	protected:
 		bool m_allowResize;
-		CBandedGridAMe *m_grid;
+		CBandedGridMe *m_grid;
 		int m_index;
 		CGridBandMe *m_parentBand;
 	protected:
@@ -36,8 +36,8 @@ namespace MeLib
 		virtual ~CGridBandMe();
 		virtual bool AllowResize();
 		virtual void SetAllowResize(bool allowResize);
-		virtual CBandedGridAMe* GetGrid();
-		virtual void SetGrid(CBandedGridAMe *grid);
+		virtual CBandedGridMe* GetGrid();
+		virtual void SetGrid(CBandedGridMe *grid);
 		virtual int GetIndex();
 		virtual void SetIndex(int index);
 		virtual CGridBandMe* GetParentBand();

@@ -6,11 +6,11 @@
 #ifndef __CPLOTBASEME_H__
 #define __CPLOTBASEME_H__
 #pragma once
-#include "..\\stdafx.h"
-#include "..\\include\\Base\\CStr.h"
-#include "..\\include\\Base\\CNativeBase.h"
-#include "..\\include\\Base\\CPaint.h"
-#include "..\\include\\Base\\CMathLib.h"
+#include "..\\..\\stdafx.h"
+#include "..\\Base\\CStr.h"
+#include "..\\Base\\CNativeBase.h"
+#include "..\\Base\\CPaint.h"
+#include "..\\Base\\CMathLib.h"
 #include "CDiv.h"
 #include "CChart.h"
 #include "CTable.h"
@@ -19,7 +19,7 @@
 namespace MeLib
 {
 	class CDivMe;
-	class CTable;
+	class CTableMe;
 	class CChartMe;
 	class CNativeBaseMe;
 	class CMathLibMe;
@@ -57,11 +57,11 @@ namespace MeLib
 		bool m_isPaintingGhost;
 		int m_lineStyle;
 		int m_lineWidth;
-		map<int,CPlotMarkMe*> m_marks;
+		map<int, CPlotMarkMe*> m_marks;
 		int m_moveTimes;
 		String m_plotType;
-		map<String,int> m_sourceFields;
-		map<int,CPlotMarkMe*> m_startMarks;
+		map<String, int> m_sourceFields;
+		map<int, CPlotMarkMe*> m_startMarks;
 		bool m_selected;
 		_int64 m_selectedColor;
 		SelectPoint m_selectedPoint;
@@ -93,7 +93,7 @@ namespace MeLib
 		void MovePlot(float mouseY, float startY, int startIndex, int mouseBeginIndex, int mouseEndIndex, float pureV,
 		double max, double min, int dataCount, double *yAddValue, int *newIndex);
 	protected:
-		void ClearMarks(map<int,CPlotMarkMe*> *marks);
+		void ClearMarks(map<int, CPlotMarkMe*> *marks);
 		CNativeBaseMe* GetNative();
 		bool CreatePoint(const POINT& mp);
 		bool Create2PointsA(const POINT& mp);
@@ -102,12 +102,12 @@ namespace MeLib
 		bool Create3Points(const POINT& mp);
 		void CreateCandlePoint(int pos, int index, int close);
 		bool Create4CandlePoints(const POINT& mp);	
-		double* GetCandleRange(map<int,CPlotMarkMe*> *pList, int *length);
+		double* GetCandleRange(map<int, CPlotMarkMe*> *pList, int *length);
 		POINT GetMouseOverPoint();
 		int GetIndex(const POINT& mp);
 		float* GetLineParams(CPlotMarkMe *markA, CPlotMarkMe *markB, int *length);
-		double* GetLRBandRange(map<int,CPlotMarkMe*> *marks, float *param);
-		float* GetLRParams(map<int,CPlotMarkMe*> *marks);
+		double* GetLRBandRange(map<int, CPlotMarkMe*> *marks, float *param);
+		float* GetLRParams(map<int, CPlotMarkMe*> *marks);
 		POINT GetMovingPoint();
 		double GetNumberValue(const POINT& mp);
 		int GetPx();

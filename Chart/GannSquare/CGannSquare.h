@@ -1,30 +1,26 @@
-/*****************************************************************************\
-*                                                                             *
-* GannSquare.h -  GannSquare functions, types, and definitions              *
-*                                                                             *
-*               Version 4.00 ¡ï¡ï¡ï                                           *
-*                                                                             *
-*               Copyright (c) 2016-2016, Lord's square. All rights reserved.  *
-*                                                                             *
-*******************************************************************************/
+/**
+ *  @file
+ *  @copyright defined in mechart/LICENSE
+ */
 
-#ifndef __EASY_GANNSQUARE_H__
-#define __EASY_GANNSQUARE_H__
+#ifndef __CGANNSQUAREME_H__
+#define __CGANNSQUAREME_H__
 #pragma once
 #include "..\\..\\stdafx.h"
-#include "GSEnums.h"
-#include "SquareCell.h"
-using namespace OwLib;
+#include "CGSEnums.h"
+#include "CSquareCell.h"
 
-namespace OwLib
+using namespace MeLib;
+
+namespace MeLib
 {
-	class SquareCell;
-	class GannSquare:public ControlA
+	class CSquareCellMe;
+	class CGannSquareMe: public CControlMe
 	{
 	private:
 		BolsterOrStress m_bolsterOrStress;
 		FONT *m_cellFont;
-		vector<SquareCell*> m_cells;
+		vector<CSquareCellMe*> m_cells;
 		SIZE m_cellSize;
 		int m_digit;
 		_int64 m_majorColor;
@@ -37,8 +33,8 @@ namespace OwLib
 		wstring m_suffix;
 		double m_unit;
 	public:
-		GannSquare();
-		virtual ~GannSquare();
+		CGannSquareMe();
+		virtual ~CGannSquareMe();
 		BolsterOrStress GetBolsterOrStress();
 		void SetBolsterOrStress(BolsterOrStress bolsterOrStress);
 		FONT* GetCellFont();
@@ -69,8 +65,8 @@ namespace OwLib
 	public:
 		virtual void GetProperty(const wstring& name, wstring *value, wstring *type);
 		virtual vector<wstring> GetPropertyNames();
-		virtual void OnClick(const POINT& mp, MouseButtonsA button, int clicks, int delta);
-		virtual void OnPaintBackground(CPaint *paint, const RECT& clipRect);
+		virtual void OnClick(const POINT& mp, MouseButtonsMe button, int clicks, int delta);
+		virtual void OnPaintBackground(CPaintMe *paint, const RECT& clipRect);
 		void ReCreate();
 		virtual void SetProperty(const wstring& name, const wstring& value);
 		virtual void Update();

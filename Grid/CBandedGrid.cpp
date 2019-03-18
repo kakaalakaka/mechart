@@ -3,7 +3,7 @@
 
 namespace MeLib
 {
-	int CBandedGridAMe::GetAllVisibleBandsWidth()
+	int CBandedGridMe::GetAllVisibleBandsWidth()
 	{
 		int num = 0;
         int count = (int)m_bands.size();
@@ -18,17 +18,17 @@ namespace MeLib
         return num;
 	}
 
-	CBandedGridAMe::CBandedGridAMe()
+	CBandedGridMe::CBandedGridMe()
 	{
 	
 	}
 	
-	CBandedGridAMe:: ~CBandedGridAMe()
+	CBandedGridMe:: ~CBandedGridMe()
 	{
 		
 	}
 	
-	void CBandedGridAMe::AddBand(CGridBandMe *band)
+	void CBandedGridMe::AddBand(CGridBandMe *band)
 	{
 		band->SetGrid(this);
 		m_bands.push_back(band);
@@ -40,7 +40,7 @@ namespace MeLib
 		AddControl(band);	
 	}
 	
-	void CBandedGridAMe::AddColumn(CGridColumnMe *column)
+	void CBandedGridMe::AddColumn(CGridColumnMe *column)
 	{
 		CBandedGridColumnMe* bandedGridColumn = dynamic_cast<CBandedGridColumnMe*>(column);
 		if(bandedGridColumn)
@@ -51,7 +51,7 @@ namespace MeLib
 		}	
 	}
 	
-	void CBandedGridAMe::ClearBands()
+	void CBandedGridMe::ClearBands()
 	{
 		int count = (int)m_bands.size();
 		for (int i = 0; i < count; i++)
@@ -64,16 +64,16 @@ namespace MeLib
 		m_bands.clear();
 	}
 	
-	void CBandedGridAMe::ClearColumns()
+	void CBandedGridMe::ClearColumns()
 	{
 		
 	}
-	vector<CGridBandMe*> CBandedGridAMe::GetBands()
+	vector<CGridBandMe*> CBandedGridMe::GetBands()
 	{
 		return m_bands;
 	}
 
-	int CBandedGridAMe::GetContentWidth()
+	int CBandedGridMe::GetContentWidth()
 	{
         CHScrollBarMe* hScrollBar = GetHScrollBar();
         CVScrollBarMe* vScrollBar = GetVScrollBar();
@@ -100,12 +100,12 @@ namespace MeLib
         return wmax;
 	}
 	
-	String CBandedGridAMe::GetControlType()
+	String CBandedGridMe::GetControlType()
 	{
 		return L"BandedGrid";
 	}
 	
-	void CBandedGridAMe::InsertBand(int index, CGridBandMe *band)
+	void CBandedGridMe::InsertBand(int index, CGridBandMe *band)
 	{
         band->SetGrid(this);
 		m_bands.insert(m_bands.begin() + index, band);
@@ -117,7 +117,7 @@ namespace MeLib
         AddControl(band);		
 	}
 
-	void CBandedGridAMe::OnSetEmptyClipRegion()
+	void CBandedGridMe::OnSetEmptyClipRegion()
 	{
 		vector<CControlMe*> controls = GetControls();
 		int count = (int)controls.size();
@@ -135,7 +135,7 @@ namespace MeLib
 		}		
 	}
 	
-	void CBandedGridAMe::RemoveBand(CGridBandMe *band)
+	void CBandedGridMe::RemoveBand(CGridBandMe *band)
 	{
 		int count = (int)m_bands.size();
 		bool isRemove = false;
@@ -160,7 +160,7 @@ namespace MeLib
 		}
 	}
 	
-	void CBandedGridAMe::RemoveColumn(CGridColumnMe *column)
+	void CBandedGridMe::RemoveColumn(CGridColumnMe *column)
 	{
 		CBandedGridColumnMe* bandedGridColumn = dynamic_cast<CBandedGridColumnMe*>(column);
 		if(bandedGridColumn)
@@ -178,7 +178,7 @@ namespace MeLib
         }		
 	}
 	
-	void CBandedGridAMe::ResetHeaderLayout()
+	void CBandedGridMe::ResetHeaderLayout()
 	{
 		int left = 0;
 		int top = 0;
@@ -226,7 +226,7 @@ namespace MeLib
 		}		
 	}
 	
-	void CBandedGridAMe::Update()
+	void CBandedGridMe::Update()
 	{
         if (!CGridMe::m_lockUpdate)
         {
