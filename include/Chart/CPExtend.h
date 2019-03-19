@@ -14,84 +14,84 @@ namespace MeLib
 {
 	class CPlotBase;
 
-	class P001:public CPlotBaseMe
+	class PlotAndrewsPitchFork:public CPlotBaseMe
 	{
 	public:
-		P001();
+		PlotAndrewsPitchFork();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P002:public CPlotBaseMe
+	class PlotAngleLine:public CPlotBaseMe
 	{
 	public:
-		P002();
+		PlotAngleLine();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P003:public CPlotBaseMe
+	class PlotCircumCircle:public CPlotBaseMe
 	{
 	public:
-		P003();
+		PlotCircumCircle();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P004:public CPlotBaseMe
+	class PlotArrowSegment:public CPlotBaseMe
 	{
 	public:
-		P004();
+		PlotArrowSegment();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
-	class P005:public CPlotBaseMe
+	class PlotDownArrow:public CPlotBaseMe
 	{
 	protected:
 		RECT GetDownArrowRect(float x, float y, float width);
 	public:
-		P005();
+		PlotDownArrow();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
-	class P006:public CPlotBaseMe
+	class PlotDropLine:public CPlotBaseMe
 	{
 	protected:
 		float* GetDropLineParams(map<int, CPlotMarkMe*> *pList);
 	public:
-		P006();
+		PlotDropLine();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P009:public CPlotBaseMe
+	class PlotEllipse:public CPlotBaseMe
 	{
 	public:
-		P009();
+		PlotEllipse();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P010:public CPlotBaseMe
+	class PlotFiboEllipse:public CPlotBaseMe
 	{
 	protected:
 		float* FibonacciEllipseParam(map<int, CPlotMarkMe*> *pList, int *length);
 	public:
-		P010();
+		PlotFiboEllipse();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -99,10 +99,10 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P011:public CPlotBaseMe
+	class PlotFibofanLine:public CPlotBaseMe
 	{
 	public:
-		P011();
+		PlotFibofanLine();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -110,24 +110,24 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P012:public CPlotBaseMe
+	class PlotFiboTimeZone:public CPlotBaseMe
 	{
 	protected:
 		vector<int> GetFibonacciTimeZonesParam(map<int,CPlotMarkMe*> *pList);
 	public:
-		P012();
+		PlotFiboTimeZone();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P014:public CPlotBaseMe
+	class PlotGannbox:public CPlotBaseMe
 	{
 	protected:
 		POINT m_oppositePoint;
 	public:
-		P014();
+		PlotGannbox();
 		virtual ActionType GetAction();
 		ActionType GetClickStatus();
 		POINT* GetGannBoxPoints(float x1, float y1, float x2, float y2, int *length);
@@ -138,10 +138,10 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P016:public CPlotBaseMe
+	class PlotGannLine:public CPlotBaseMe
 	{
 	public:
-		P016();
+		PlotGannLine();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -149,10 +149,10 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P017:public CPlotBaseMe
+	class PlotGoldenRatio:public CPlotBaseMe
 	{
 	public:
-		P017();
+		PlotGoldenRatio();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -161,10 +161,10 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P018:public CPlotBaseMe
+	class PlotHline:public CPlotBaseMe
 	{
 	public:
-		P018();
+		PlotHline();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -172,12 +172,12 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P019:public CPlotBaseMe
+	class PlotLevelGrading:public CPlotBaseMe
 	{
 	protected:
 		float* LevelGradingParams(double value1, double value2, int *length);
 	public:
-		P019();
+		PlotLevelGrading();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -186,31 +186,20 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P020:public CPlotBaseMe
+	class PlotLine:public CPlotBaseMe
 	{
 	public:
-		P020();
+		PlotLine();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P021:public CPlotBaseMe
+	class PlotLrBand:public CPlotBaseMe
 	{
 	public:
-		P021();
-		virtual ActionType GetAction();
-		virtual bool OnCreate(const POINT& mp);
-		virtual void OnMoveStart();
-		virtual void OnMoving();
-		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
-	};
-
-	class P022:public CPlotBaseMe
-	{
-	public:
-		P022();
+		PlotLrBand();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -218,10 +207,10 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P023:public CPlotBaseMe
+	class PlotLrChannel:public CPlotBaseMe
 	{
 	public:
-		P023();
+		PlotLrChannel();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -229,37 +218,48 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P024:public CPlotBaseMe
+	class PlotLrLine:public CPlotBaseMe
+	{
+	public:
+		PlotLrLine();
+		virtual ActionType GetAction();
+		virtual bool OnCreate(const POINT& mp);
+		virtual void OnMoveStart();
+		virtual void OnMoving();
+		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
+	};
+
+	class PlotNullPoint:public CPlotBaseMe
 	{
 	protected:
 		void NullPoint(float x1, float y1, float x2, float y2, float *nullX, float *nullY);
 		double* GetNullPointParams(map<int,CPlotMarkMe*> *pList);
 	public:
-		P024();
+		PlotNullPoint();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P025:public CPlotBaseMe
+	class PlotParallel:public CPlotBaseMe
 	{
 	protected:
 		float* GetParallelParams(map<int,CPlotMarkMe*> *pList, int *length);
 	public:
-		P025();
+		PlotParallel();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P026:public CPlotBaseMe
+	class PlotPercent:public CPlotBaseMe
 	{
 	protected:
 		float* GetPercentParams(double value1, double value2, int *length);
 	public:
-		P026();
+		PlotPercent();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -268,13 +268,13 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P027:public CPlotBaseMe
+	class PlotPeriodic:public CPlotBaseMe
 	{
 	protected:
 		int m_period;
 		int m_beginPeriod;
 	public:
-		P027();
+		PlotPeriodic();
 		virtual ActionType GetAction();
 		vector<double> GetPLParams(map<int,CPlotMarkMe*> *pList);
 		virtual bool OnCreate(const POINT& mp);
@@ -283,32 +283,32 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P028:public CPlotBaseMe
+	class PlotPrice:public CPlotBaseMe
 	{
 	protected:
 		SIZE m_textSize;
 	public:
-		P028();
+		PlotPrice();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P029:public CPlotBaseMe
+	class PlotRangeruler:public CPlotBaseMe
 	{
 	public:
-		P029();
+		PlotRangeruler();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P030:public CPlotBaseMe
+	class PlotRaseline:public CPlotBaseMe
 	{
 	public:
-		P030();
+		PlotRaseline();
 		float* GetRaseLineParams(map<int,CPlotMarkMe*> *pList);
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
@@ -316,22 +316,22 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P031:public CPlotBaseMe
+	class PlotRay:public CPlotBaseMe
 	{
 	public:
-		P031();
+		PlotRay();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P032:public CPlotBaseMe
+	class PlotRect:public CPlotBaseMe
 	{
 	protected:
 		POINT m_oppositePoint;
 	public:
-		P032();
+		PlotRect();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -340,20 +340,20 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P033:public CPlotBaseMe
+	class PlotSegement:public CPlotBaseMe
 	{
 	public:
-		P033();
+		PlotSegement();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P034:public CPlotBaseMe
+	class PlotSine:public CPlotBaseMe
 	{
 	public:
-		P034();
+		PlotSine();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -361,10 +361,10 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P035:public CPlotBaseMe
+	class PlotSpeedresist:public CPlotBaseMe
 	{
 	public:
-		P035();
+		PlotSpeedresist();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -372,12 +372,12 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P036:public CPlotBaseMe
+	class PlotSechannel:public CPlotBaseMe
 	{
 	protected:
 		double GetSEChannelSD(map<int,CPlotMarkMe*> *pList);
 	public:
-		P036();
+		PlotSechannel();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -385,34 +385,34 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P037:public CPlotBaseMe
+	class PlotSymmetricLine:public CPlotBaseMe
 	{
 	public:
-		P037();
+		PlotSymmetricLine();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P038:public CPlotBaseMe
+	class PlotSymmetricTriangle:public CPlotBaseMe
 	{
 	protected:
 		float* GetSymmetricTriangleParams(map<int,CPlotMarkMe*> *pList);
 	public:
-		P038();
+		PlotSymmetricTriangle();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P041:public CPlotBaseMe
+	class PlotTimeRuler:public CPlotBaseMe
 	{
 	protected:
 		double* GetTimeRulerParams(map<int,CPlotMarkMe*> *pList, int *length);
 	public:
-		P041();
+		PlotTimeRuler();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart(); 
@@ -420,44 +420,44 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P042:public CPlotBaseMe
+	class PlotTriangle:public CPlotBaseMe
 	{
 	public:
-		P042();
+		PlotTriangle();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void OnPaintGhost(CPaintMe *paint);
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
-	class P043:public CPlotBaseMe
+	class PlotUpArrow:public CPlotBaseMe
 	{
 	protected:
 		RECT GetUpArrowRect(float x, float y, float width);
 	public:
-		P043();
+		PlotUpArrow();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P044:public CPlotBaseMe
+	class PlotVLine:public CPlotBaseMe
 	{
 	public:
-		P044();
+		PlotVLine();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P045:public CPlotBaseMe
+	class PlotWavRuler:public CPlotBaseMe
 	{
 	protected:
 		float* GetWaveRulerParams(double value1, double value2, int *length);
 	public:
-		P045();
+		PlotWavRuler();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -465,24 +465,24 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P046:public CPlotBaseMe
+	class PlotTironelevels:public CPlotBaseMe
 	{
 	protected:
 		double* GetTironelLevelsParams(map<int,CPlotMarkMe*> *pList, int *length);
 	public:
-		P046();
+		PlotTironelevels();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P047:public CPlotBaseMe
+	class PlotRaffchannel:public CPlotBaseMe
 	{
 	protected:
 		double GetRRCRange(map<int,CPlotMarkMe*> *pList, float *param);
 	public:
-		P047();
+		PlotRaffchannel();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -490,10 +490,10 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P048:public P026
+	class PlotQuadrantLines:public PlotPercent
 	{
 	public: 
-		P048();
+		PlotQuadrantLines();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -501,12 +501,12 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P049:public P032
+	class PlotBoxLine:public PlotRect
 	{
 	protected:
 		ActionType GetAction(const POINT& mp);
 	public:
-		P049();
+		PlotBoxLine();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -514,10 +514,10 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P050:public CPlotBaseMe
+	class PlotParallelogram:public CPlotBaseMe
 	{
 	public:
-		P050();
+		PlotParallelogram();
 		virtual ActionType GetAction();
 		POINT* GetPLPoints(map<int,CPlotMarkMe*> *pList, int *length);
 		virtual bool OnCreate(const POINT& mp);
@@ -526,33 +526,33 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P051:public CPlotBaseMe
+	class PlotCircle:public CPlotBaseMe
 	{
 	public:
-		P051();
+		PlotCircle();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P052:public P025
+	class PlotPriceChannel:public PlotParallel
 	{
 	protected:
 		void GetLine3Params(map<int,CPlotMarkMe*> *pList, float *k, float *d, float *x4);
 		void PaintEx(CPaintMe *paint, map<int,CPlotMarkMe*> *pList,_int64 lineColor);
 	public:
-		P052();
+		PlotPriceChannel();
 		virtual ActionType GetAction();
 		virtual void OnMoveStart();
 		virtual void OnPaint(CPaintMe *paint);
         virtual void OnPaintGhost(CPaintMe *paint);
 	};
 
-	class P053:public CPlotBaseMe
+	class PlotGP:public CPlotBaseMe
 	{
 	public:
-		P053();
+		PlotGP();
 		virtual ActionType GetAction();
 		virtual bool OnCreate(const POINT& mp);
 		virtual void OnMoveStart();
@@ -560,12 +560,12 @@ namespace MeLib
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
 	};
 
-	class P054:public P042
+	class PlotGA:public PlotTriangle
 	{
 	protected:
 		float* GetGoldenRatioAimParams(map<int,CPlotMarkMe*> *pList, int *length);
 	public:
-		P054();
+		PlotGA();
 		virtual ActionType GetAction();
 		virtual void OnMoveStart();
 		virtual void Paint(CPaintMe *paint, map<int,CPlotMarkMe*> *pList, _int64 lineColor);
