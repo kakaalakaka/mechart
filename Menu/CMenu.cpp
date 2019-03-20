@@ -108,7 +108,6 @@ void CMenuMe::CallMenuItemMouseEvent(int eventID, CMenuItemMe *item, const POINT
 		vector<void*>* invokerList = sIterInvoker->second;
  		int count = (int)list->size();
 		int count2 = (int)invokerList->size();
-		assert(count == count2);
 		for(int i = 0; i < count; i++)
 		{
 			MenuItemMouseEvent event2 = (MenuItemMouseEvent)(*list)[i];
